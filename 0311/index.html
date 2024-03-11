@@ -24,6 +24,83 @@
 
 
 <body>
+
+    <script>
+        // HTML CSS  (Not a programming language, )
+        // Javascript New topic (a programming language)
+        // ^ Livescript => Javascript
+        // Java and Javascript
+        // not type safe language (not strict programming language)
+        // JAavascript popular bc it is easy to learn
+        // adding rules to javascript to make it more type safe
+
+        //script1
+        "use strict"; //error if wrong like C#
+        // define variables
+        { //walls, code block, local variables can only run inside { }
+            const age1=20; // undefined variable type, flexible, local
+            let age2; //local variable
+            var v1; // global variable
+
+            age2 = 20; // age 2 is a number
+            age2 = 128.8;
+
+            age2 = 'Tom'; //" "
+
+            age2 = ``;
+
+            let name = "tom";
+            let age = 20;
+
+            let str = `The name is ${name}. The age is ${age}`;
+
+            console.log(str);
+            //alert(str);
+
+            let stu; //undefined, local variable
+            //object or dictionary
+            stu = {
+                name: "Tom",
+                age: 20,
+                grade : 96.6,
+            }
+            console.log(stu.grade);
+
+            let arr1; //undefined
+            arr1 = ["Tom", "Jack"];
+            console.log(arr1.length);
+            console.log(arr1[1]);
+
+            //define function
+            // 1st way, no let
+            function funct1(p1,p2)
+            { 
+                return p1 + p1; // return is not mandatory
+            }
+            // 2nd way, arrow function
+            // ; is not mandatory, but use it to show end of line
+            let funct2 = (p1, p2) =>
+            {
+                return p1 * p2;
+            };
+
+            console.log(funct1(2.3, 3.0));
+            console.log(funct2(2.3, 3.0));
+            
+        }
+
+    </script>
+
+    <script>
+
+        //script2
+        "use strict";
+        {
+            v1 = 20;
+        }
+
+    </script>
+
     <div id="div1">
     </div>
     <img id="img1" src="head1.png"/>
