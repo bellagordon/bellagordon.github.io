@@ -1,46 +1,49 @@
 "use strict";
+
+
 let R = null;
-let chart1 = null; //chart to be shown in canvas
+let chart2 = null;
+let b2 = document.querySelector("#b2");
 
-let b1 = document.querySelector("#b1");
 
-async function loadd()
-{ //fetch()
-    let url = `https://juxinglong.github.io/static/data/states.json`;
+async function showc()
+{
+    let url = `https://juxinglong.github.io/static/HW/hw6/MIS3033.json`;
+    //fetch()
 
     let r = await fetch(url);
     let rj = await r.json();
 
-    let c1 = document.querySelector("#c1");
-    if (chart1 != null)
-    {
-        chart1.destroy(); //if there is already a chart, delete it
-
-    }
-    c1.innerHTML = ``; //clean canvas to show another chart
+    let c2 = document.querySelector("#c2");
 
     let opts =
     {
-        type: "pie",
-        
+        type: "pie", //line, bar, pie
         data: {
-            labels: rj.map(x => x.st),
-            datasets: [
-                
-                {data:rj.map(x=>x.p),},
-            ],
+            labels: rj.map(x=>x.lg),
+            datasets: [{ data: rj.map(x => x.n), label: "Number", }],
         },
-
     };
 
-    chart1 = new Chart(c1,opts);
+    
+
+    if (chart2 != null)
+    {
+        chart2.destroy();
+    }
+    c2.innerHTML = ``;
+
+    chart2 = new Chart(c2, opts);
+
+    //anime.js
+    opts = {
+        targets: [c2,],
+        rotate: {value:60,duration:3000,},
+    }
+    anime(opts);
 
     R = rj;
     console.log(rj);
-
-
-    Swal.fire("Load data");
 }
 
-b1.addEventListener("click",loadd);
-
+b2.addEventListener("click",showc );
