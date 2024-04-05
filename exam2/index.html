@@ -1,26 +1,154 @@
 <html>
 <head>
-    <title>MIS 3033 Exam 2 Spring 2024 [Exam Code] Isabella Gordon</title>
-    <link rel="icon" href="static/img/head1.png"/>
-    <link rel="stylesheet" href="static/site.css"/>
+    <title>MIS 3033 Exam 2 Spring 2024 [ZMRA] Isabella Gordon</title>
+    <link rel="icon" href="static/img/head1.png" />
+    <link rel="stylesheet" href="static/site.css" />
 
-    <style> /*can write styles here or on site.css*/
+    <style>
+        /*can write styles here or on site.css*/
+        #main
+        {
+            width:1000px;
+            
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #header
+        {
+            width:1000px;
+            height:100px;
+            display:flex;
+            flex-direction:row;
+            justify-content:right;
+            align-items:center;
+            
+            font-size:30pt;
+            color:dodgerblue;
+            text-transform:uppercase;
+            font-weight:bold;
+        }
+        #headertext
+        {
+            margin-right:20px;
+        }
+        
+        #body
+        {
+            display:flex;
+            flex-direction:row;
+        }
+        #leftdiv
+        {
+            width:480px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            color:dodgerblue;
+            font-size:20pt;
+            font-weight:bold;
+            border-width:2px;
+            border-style:solid;
+            border-color:darkgray;
+            border-radius:10px;
+
+        }
+        #rightdiv 
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        #updiv
+        {
+            width:480px;
+            border-width:2px;
+            border-style:solid;
+            border-color:darkgray;
+            border-radius:10px;
+            
+        }
+        #downdiv 
+        {
+            width: 480px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: darkgray;
+            border-radius: 10px;
+            margin-top:5px;
+        }
+        #footer
+        {
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+            width:1000px;
+            height:50px;
+            background-color:aliceblue;
+            color:darkgray;
+            border-radius:5px;
+        }
+
 
     </style>
 </head>
 
 <body>
-    [Exam Code]
-    <img src="static/img/a.svg"style="height:50px;"/>
-    <img src="static/img/b.svg"style="height:50px;"/>
-    <img src="static/img/css.svg"style="height:50px;"/>
-    <img src="static/img/head1.png"style="height:50px;"/>
-    <img src="static/img/head2.png"style="height:50px;"/>
-    <img src="static/img/html.svg"style="height:50px;"/>
-    <img src="static/img/javascript.svg"style="height:50px;"/>
-    <img src="static/img/linkedin.png"style="height:50px;"/>
-    <img src="static/img/logo.svg"style="height:50px;"/>
-    <img src="static/img/sqlite.svg"style="height:50px;"/>
+    [ZMRA]
+    <div id="main">
+        
+        <div id="header">
+            <div id="headertext">
+                I Love Programming!
+            </div>
+            
+            
+            <div >
+                <img src="static/img/a.svg" style="height:100px;" />
+            </div>
+            
+        </div>
+
+        <div id="body">
+            <div id="leftdiv">
+                I Love MIS3033
+                <img src="static/img/b.svg" style="width:400px;" />
+            </div>
+
+            <div id="rightdiv">
+                <div id="updiv">
+                    <span style="font-size:20px;font-weight:bold;background-color:lightskyblue;border-radius:5px;">
+                        What I already learned:
+                    </span>
+                    <ul>
+                        <li>C#</li>
+                        <li>C# Entity Framework</li>
+                        <li>Databse Sqlite</li>
+                        <li>HTML & CSS</li>
+                    </ul>
+                </div>
+                
+                <div id="downdiv">
+                    <span style="font-size:20px;font-weight:bold;">
+                        What I am going to learn next:
+                    </span>
+                    <ol>
+                        <li>JavaScript</li>
+                        <li>BootStrap</li>
+                        <li>ASP.NET MVC</li>
+                        <li>Web REST API</li>
+                    </ol>
+                </div>
+               
+            </div>
+           
+        </div>
+
+        
+        <div id="footer">
+            Designed and Developed by Isabella Gordon for MIS 3033 Exam 2
+        </div>
+    </div>
+   
 
 
 </body>
